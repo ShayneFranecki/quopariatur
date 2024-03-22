@@ -1,0 +1,31 @@
+.timeline_MiniGantt .line {
+  fill: none;
+  stroke: lightgrey;
+  opacity: 0.7;
+}
+
+.timeline_MiniGantt .common_TextBox .rect {
+  fill: lightskyblue;
+  stroke: blue;
+  opacity: 0.5;
+}
+
+.timeline_MiniGantt .buckets .entity_shape rect {
+  stroke: #333;
+}
+
+.timeline_MiniGantt .buckets.selected .common_EntityRect .common_Shape > rect {
+  stroke: red;
+}
+
+.timeline_MiniGantt .common_TextBox .rect text {
+  fill: black;
+  stroke: none;
+}
+.timeline_MiniGantt .over {
+  stroke: transparent;
+  opacity: 0.8;
+}
+.timeline_MiniGantt rect {
+  shape-rendering: crispEdges;
+}

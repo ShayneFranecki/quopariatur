@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "@hpcc-js/test-marshaller",
+  "version": "2.0.3",
+  "dependencies": {
+    "@hpcc-js/common": "^2.2.1",
+    "@hpcc-js/dgrid-shim": "^2.0.2",
+    "@hpcc-js/marshaller": "^2.2.1",
+    "chai": "4.0.0",
+    "es6-promise": "4.2.4",
+    "mocha": "3.4.2",
+    "simulate-event": "1.4.0"
+  },
+  "devDependencies": {
+    "@types/chai": "3.5.2",
+    "@types/mocha": "2.2.41",
+    "cpx": "1.5.0",
+    "css-loader": "1.0.0",
+    "file-loader": "1.1.5",
+    "mocha-chrome": "1.0.3",
+    "rimraf": "2.6.2",
+    "source-map-loader": "0.2.1",
+    "style-loader": "0.22.1",
+    "typescript": "3.0.1",
+    "webpack": "4.16.5",
+    "webpack-cli": "3.1.0"
+  },
+  "scripts": {
+    "clean": "rimraf lib* types dist",
+    "compile-es6": "tsc --module es6 --outDir ./lib-es6",
+    "compile-es6-watch": "npm run compile-es6 -- -w",
+    "bundle-umd": "webpack",
+    "copy-resources": "cpx ./node_modules/@hpcc-js/dgrid-shim/dist/dojo/resources/* ./dist/dojo/resources",
+    "build": "npm run compile-es6 && npm run bundle-umd && npm run copy-resources",
+    "test": "mocha-chrome ./test.html"
+  }
+}

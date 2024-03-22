@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gallery",
+            "type": "chrome",
+            "request": "launch",
+            "url": "file:///${workspaceRoot}/gallery.html",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--disable-web-security"
+            ],
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "galleryItem",
+            "type": "chrome",
+            "request": "launch",
+            "url": "file:///${workspaceRoot}/galleryItem.html?./samples/palette/Ordinal/Chart%20Panel.js",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--disable-web-security"
+            ],
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "playground",
+            "type": "chrome",
+            "request": "launch",
+            "url": "file:///${workspaceRoot}/playground.html?./samples/misc/Word%20Cloud.js",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--disable-web-security"
+            ],
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "test",
+            "type": "chrome",
+            "request": "launch",
+            "url": "file:///${workspaceRoot}/test.html",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--disable-web-security"
+            ],
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}

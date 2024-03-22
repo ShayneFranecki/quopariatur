@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "name": "@hpcc-js/demo-dashy",
+  "version": "2.1.1",
+  "scripts": {
+    "clean": "rimraf lib* types dist",
+    "compile-es6": "tsc --module es6 --outDir ./lib-es6",
+    "compile-es6-watch": "npm run compile-es6 -- -w",
+    "compile-umd": "tsc --module umd --outDir ./lib-umd",
+    "bundle": "webpack",
+    "bundle2": "rollup -c",
+    "build": "npm run compile-es6 && npm run bundle && npm run bundle2",
+    "start-dev": "ws"
+  },
+  "dependencies": {
+    "@hpcc-js/api": "^2.0.3",
+    "@hpcc-js/chart": "^2.1.2",
+    "@hpcc-js/codemirror": "^2.0.3",
+    "@hpcc-js/common": "^2.2.1",
+    "@hpcc-js/comms": "^2.0.3",
+    "@hpcc-js/composite": "^2.0.3",
+    "@hpcc-js/ddl-shim": "^2.1.1",
+    "@hpcc-js/dgrid": "^2.0.3",
+    "@hpcc-js/dgrid-shim": "^2.0.2",
+    "@hpcc-js/form": "^2.0.3",
+    "@hpcc-js/graph": "^2.1.1",
+    "@hpcc-js/layout": "^2.1.2",
+    "@hpcc-js/map": "^2.0.3",
+    "@hpcc-js/marshaller": "^2.2.1",
+    "@hpcc-js/other": "^2.1.2",
+    "@hpcc-js/phosphor": "^2.1.2",
+    "@hpcc-js/phosphor-shim": "^2.0.2",
+    "@hpcc-js/util": "^2.1.1",
+    "d3-array": "1.2.1",
+    "d3-collection": "1.0.4",
+    "es6-promise": "4.2.4",
+    "tslib": "1.9.3"
+  },
+  "devDependencies": {
+    "local-web-server": "2.6.0",
+    "material-design-lite": "1.2.1",
+    "pure-css": "1.0.4",
+    "rimraf": "2.6.2",
+    "rollup": "0.63.5",
+    "typescript": "3.0.1",
+    "webpack": "4.16.5",
+    "webpack-cli": "3.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "packages/*",
+    "tests/*",
+    "utils/*",
+    "demos/*"
+  ],
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "gitRemote": "upstream",
+      "ignoreChanges": [
+        "*.md"
+      ]
+    },
+    "publish": {}
+  },
+  "version": "independent",
+  "npmClient": "npm",
+  "lerna": "3.2.1"
+}

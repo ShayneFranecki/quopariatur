@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitThis": true,
+    "declaration": false,
+    "noImplicitAny": true,
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.promise"
+    ],
+    "types": [
+      "chai",
+      "mocha"
+    ]
+  },
+  "include": [
+    "src/*"
+  ]
+}
